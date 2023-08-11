@@ -31,7 +31,7 @@ public class BinaryPrefixDivisibleByFive1018 {
     public static List<Boolean> prefixesDivBySecond5(int[] nums) {
         List<Boolean> ans = new ArrayList<>();
         int curr = 0;
-        for (final int num : nums) {
+        for (final int num : nums){
             curr = (curr * 2 + num) % 5;
             ans.add(curr % 5 == 0);
         }
